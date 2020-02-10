@@ -30,8 +30,7 @@ export class CrawlerBot extends ActivityHandler {
         if (text.toLocaleLowerCase().includes(PRICE_QUOTE_SUGGESTION.toLocaleLowerCase())) {
           await this.sendDatePickerCard(turnContext);
         } else {
-          await turnContext.sendActivity(`Meu nome é Felipe e eu ainda estou aprendendo a como ser um bot.
-          Aqui algumas das coisas que eu já sei fazer Olá eu sou o Dimibot. Ainda estou aprendendo a fazer algumas coisas, mas você já pode me perguntar sobre "Cotação de Tarifas" que eu consigo te ajudar:`);
+          await turnContext.sendActivity(`Eu sou o Dimibot. Ainda estou aprendendo a fazer algumas coisas, mas você já pode me perguntar sobre "Cotação de Tarifas" que eu consigo te ajudar:`);
           await this.sendSuggestedActions(turnContext);
         }
       } else if (value) {
